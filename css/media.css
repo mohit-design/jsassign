@@ -1,0 +1,612 @@
+@media only screen and (max-width: 767px) {
+
+/*------- Common CSS Starts -------*/
+
+.container-fluid { padding: 20px 15px; }
+.d-block-mobile { display: block; }
+.section-heading > h2 { font-size: 2.4rem; margin-bottom: 20px; }
+.section-heading > h2 > span:first-child::after,
+.section-heading > h2 > span:nth-child(2) > span::after { bottom: 4px; height: 4px; }
+p { font-size: 1.6rem; text-align: justify; }
+.section-heading > h3 { font-size: 2.4rem; margin-bottom: 20px; }
+.read-more > a,
+.btn-submit { font-size: 1.6rem; padding: 12px 24px; }
+.btn-submit { margin-top: 5px; }
+.read-more-services-1 { margin: 5px 0 20px; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+  /*------- Desktop Header Menu and Desktop Logo and Navbar Menu Section Starts -------*/
+
+.bg-desktop-header-menu,
+.bg-logo-navbar-menu-desktop { display: none; }
+
+  /*------- Desktop Header Menu and Desktop Logo and Navbar Menu Section Ends -------*/
+
+  /*------- Slider Section Starts -------*/
+
+.bg-slider-home { padding: 0; }
+.slider-info-home { padding: 0 20px; }
+.slider-info-home > h1 { font-size: 3rem; }
+.slider-info-home > h1 > span:first-child::after,
+.slider-info-home > h1 > span:last-child > span::after { height: 4px; }
+.banner-slick-slider .slick-prev,
+.banner-slick-slider .slick-next { height: 40px; width: 40px; }
+
+	/*------- Slider Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.row-manage-consul { display: block; margin-bottom: 30px; }
+.row-infra-deve { display: block; margin-bottom: 30px; }
+.about-info > p { margin-bottom: 20px; }
+.about-info > p:last-child { margin-bottom: 0; }
+.about-desc-1 { padding-right: 0; }
+.about-image-1 { margin: 30px 0 40px; }
+.about-image-1::before { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; bottom: -20px; height: 50px; left: -10px; width: 50px; }
+.about-image-1::after { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; height: 50px; right: -10px; top: -10px; width: 100px; }
+.about-image-2::before { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; bottom: -20px; height: 50px; right: -10px; width: 50px; }
+.about-image-2::after { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; height: 50px; left: -10px; top: -10px; width: 100px; }
+.about-section-heading-2,
+.about-desc-2 { padding-left: 0; }
+.about-image-2 { margin-bottom: 40px; }
+
+	/*------- About Us Section Ends -------*/
+
+  /*------- Services Section Starts -------*/
+
+.box-services { margin-bottom: 20px; padding: 20px; }
+.box-services-image > svg { height: 40px; }
+.box-services-info > h4 { font-size: 2.2rem; }
+
+  /*------- Services Section Ends -------*/
+
+  /*------- Contact Us Section Starts -------*/
+
+.col-width-40-per { width: 100%; }
+.col-offset-4-per { margin-left: 0; }
+.contact-image { margin: 10px 0 40px; }
+.contact-image::before { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; bottom: -20px; height: 50px; left: -10px; width: 50px; }
+.contact-image::after { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; height: 50px; right: -10px; top: -10px; width: 100px; }
+.form-control-contact { font-size: 1.6rem; height: 34px; margin-bottom: 20px; }
+
+	/*------- Contact Us Section Ends -------*/
+
+  /*------- Testimonial Section Starts -------*/
+
+.testimonials-slider { margin-top: 0; }
+.testimonial-image > img { margin: 0 auto 20px; }
+.box-testimonial-desc-home > p { margin-bottom: 20px; }
+.box-testimonial-desc-home > h3 { font-size: 2rem; padding-left: 30px; }
+.box-testimonial-desc-home > h3::before { width: 20px; }
+.box-testimonial-desc-home > p:last-child { font-size: 1.4rem; padding-left: 30px; }
+
+  /*------- Testimonial Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.box-footer { padding: 20px 20px 0; width: 90%; }
+.footer-logo { text-align: center; }
+.footer-contact-listing,
+.footer-logo > a > img { margin-bottom: 20px; }
+.footer-about-desc > p { margin-bottom: 20px; padding-right: 0; }
+.footer-heading > h3 { font-size: 2.4rem; margin-bottom: 20px; }
+.footer-heading > h3 > span::after { height: 4px; }
+.quick-listing { display: block; margin: 20px 0 0; text-align: center; }
+.quick-listing > li { margin: 0 0 10px 0; }
+.quick-listing > li:last-child { margin: 0; }
+.copyright-info { margin: 20px 0 0; }
+.copyright-info,
+.copyright-info > p { text-align: center; }
+
+  /*------- Footer Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+/*------- About Us Page Starts -------*/
+
+	/*------- Banner Section Starts -------*/
+
+.section-heading-ip > h1 { font-size: 3rem; margin-bottom: 10px; }
+
+	/*------- Banner Section Starts -------*/
+
+	/*------- About Us Section Starts -------*/
+
+.about-image-pattern-ap { margin: 40px 0; }
+.about-image-pattern-ap::before { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; bottom: -20px; height: 50px; right: -10px; width: 50px; }
+.about-image-pattern-ap::after { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; height: 100px; left: -10px; top: -20px; width: 200px; }
+.about-image-pattern-ap img { margin-bottom: 20px; }
+.about-info-ap > p,
+.leading-business-listing > li:last-child { margin-bottom: 20px; }
+.leading-business-listing > li,
+.punch-lines-ap > li { font-size: 1.6rem; padding-left: 20px; text-align: justify; }
+.leading-business-listing > li::before,
+.punch-lines-ap > li::before { height: 10px; width: 10px; }
+
+	/*------- About Us Section Ends -------*/
+
+	/*------- Mission and Vision Section Starts -------*/
+
+.bg-mission-vision-ap { padding: 0 15px; }
+.mission-heading-ap > p,
+.vision-heading-ap > p { font-size: 6rem; margin: 0 0 20px; }
+.vision-heading-ap > p { margin: 20px 0; }
+.mission-vision-info-ap > p > span { font-size: 1.8rem; }
+
+	/*------- Mission and Vision Section Ends -------*/
+
+  /*------- Message from the Owner Section Starts -------*/
+
+.bg-message-from-owner-ap { padding: 0 15px; }
+.message-from-owner-info-ap > p { margin-bottom: 20px; }
+.message-from-owner-desc-ap > h4 { font-size: 2rem; margin-bottom: 10px; }
+.message-from-owner-desc-ap > h5 { font-size: 1.6rem; margin-bottom: 20px; text-align: justify; }
+
+	/*------- Message from the Owner Section Ends -------*/
+
+	/*------- Team Section Starts -------*/
+
+.bg-team-ap { padding: 0 15px; }
+.bg-team-ap > .row { margin-bottom: 35px; }
+.about-team-image-ap::before { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; bottom: -20px; height: 50px; right: -10px; width: 50px; }
+.about-team-image-ap::after { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; height: 100px; left: -10px; top: -20px; width: 200px; }
+.about-team-info-ap { margin: 10px 0 0 0; }
+.about-team-info-ap > p { margin-bottom: 20px; }
+
+	/*------- Team Section Ends -------*/
+
+/*------- About Us Page Ends -------*/
+
+/*------- Services Page Starts -------*/
+
+	/*------- Services Section Starts -------*/
+
+.services-areas-heading-sp { font-size: 1.8rem; line-height: 1.4; }
+.services-listing-sp > li,
+.services-details-listing-sp > li,
+.sub-services-details-listing-sp > li { font-size: 1.6rem; padding-left: 20px; text-align: justify; }
+.services-listing-sp > li::before,
+.services-details-listing-sp > li::before,
+.sub-services-details-listing-sp > li::before { height: 10px; width: 10px; }
+
+	/*------- Services Section Ends -------*/
+
+	/*------- Services Images Section Starts -------*/
+
+.cd-image-label { font-size: 1.2rem; }
+
+	/*------- Services Images Section Ends -------*/
+
+	/*------- Services Details Section Starts -------*/
+
+.bg-services-details-sp { padding-bottom: 0; }
+.services-details-heading-sp > h3 { font-size: 2rem; margin-bottom: 0; }
+.services-details-listing-sp { margin-top: 0; }
+.services-details-listing-sp > li:last-child { margin-bottom: 20px; }
+.services-details-listing-sp > li.others { margin-bottom: 0; }
+.services-details-listing-sp > li:last-child > ul { margin-bottom: 0; }
+
+	/*------- Services Details Section Ends -------*/
+
+/*------- Services Page Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
+
+	/*------- Form Section Starts -------*/
+
+.bg-form-cp { padding-bottom: 0; }
+.contact-image-cp { margin: 30px 0 40px; }
+.contact-form-cp { margin-left: 0; }
+
+	/*------- Form Section Ends -------*/
+
+  /*------- Map Section Starts -------*/
+
+.bg-map-cp { padding-bottom: 0; }
+
+	/*------- Map Section Ends -------*/
+
+/*------- Contact Us Page Ends -------*/
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+/*------- Common CSS Starts -------*/
+
+.container-fluid { padding: 30px 20px; }
+.d-block-tab { display: block; }
+.section-heading > h2 { font-size: 3rem; margin-bottom: 20px; }
+.section-heading > h2 > span:first-child::after,
+.section-heading > h2 > span:nth-child(2) > span::after { bottom: 7px; }
+p { font-size: 1.6rem; text-align: justify; }
+.section-heading > h3 { font-size: 2.4rem; margin-bottom: 20px; }
+.read-more > a,
+.btn-submit { font-size: 1.6rem; padding: 12px 24px; }
+.btn-submit { margin-top: 5px; }
+.read-more-services-1 { margin: 5px 0 30px; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+  /*------- Desktop Header Menu and Desktop Logo and Navbar Menu Section Starts -------*/
+
+.bg-desktop-header-menu,
+.bg-logo-navbar-menu-desktop { display: none; }
+
+  /*------- Desktop Header Menu and Desktop Logo and Navbar Menu Section Ends -------*/
+
+  /*------- Slider Section Starts -------*/
+
+.bg-slider-home { padding: 0; }
+.slider-info-home { padding: 0 35px; }
+.slider-info-home > h1 { font-size: 4rem; }
+
+	/*------- Slider Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.row-manage-consul { margin-bottom: 70px; }
+.row-infra-deve { margin-bottom: 70px; }
+.about-info > p { margin-bottom: 20px; }
+.about-info > p:last-child { margin-bottom: 50px; }
+.about-desc-1 { padding-right: 30px; }
+.about-image-1::before { -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; bottom: -20px; height: 100px; left: -10px; width: 100px; }
+.about-image-1::after { -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; height: 100px; right: -10px; top: -20px; width: 200px; }
+.about-image-2::before { -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; bottom: -20px; height: 100px; right: -10px; width: 100px; }
+.about-image-2::after { -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; height: 100px; left: -10px; top: -20px; width: 200px; }
+.about-section-heading-2,
+.about-desc-2 { padding-left: 30px; }
+
+	/*------- About Us Section Ends -------*/
+
+  /*------- Services Section Starts -------*/
+
+.box-services { padding: 20px; }
+.box-services-image > svg { height: 50px; }
+.box-services-info > h4 { font-size: 2.2rem; }
+.box-services-info > h4 > span { display: inline-block; }
+
+	/*------- Services Section Ends -------*/
+
+  /*------- Contact Us Section Starts -------*/
+
+.bg-contact { padding: 50px 20px 30px; }
+.col-width-40-per { width: 50%; }
+.col-offset-4-per { margin-left: 25%; }
+.contact-image { margin: 0 0 50px; }
+.contact-image::before { -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; bottom: -20px; height: 100px; left: -20px; width: 100px; }
+.contact-image::after { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; height: 100px; right: -20px; top: -20px; width: 200px; }
+.form-control-contact { font-size: 1.6rem; height: 40px; }
+
+	/*------- Contact Us Section Ends -------*/
+
+  /*------- Testimonial Section Starts -------*/
+
+.testimonial-image > img { width: 100%; }
+.box-testimonial-desc-home > h3 { font-size: 2.2rem; }
+
+	/*------- Testimonial Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.box-footer { padding: 30px 20px 0; width: 90%; }
+.footer-logo { text-align: center; }
+.footer-contact-listing,
+.footer-logo > a > img { margin-bottom: 20px; }
+.footer-about-desc > p { margin-bottom: 20px; padding-right: 0; }
+.footer-heading > h3 { font-size: 2.4rem; margin-bottom: 20px; }
+.footer-heading > h3 > span::after { height: 4px; }
+.quick-listing { justify-content: center; margin: 30px 0 0; }
+.copyright-info { margin: 20px 0 0; }
+.copyright-info,
+.copyright-info > p { text-align: center; }
+
+  /*------- Footer Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+/*------- About Us Page Starts -------*/
+
+	/*------- Banner Section Starts -------*/
+
+  .section-heading-ip > h1 { font-size: 3rem; margin-bottom: 10px; }
+
+	/*------- Banner Section Starts -------*/
+
+	/*------- About Us Section Starts -------*/
+
+.about-image-pattern-ap { margin: 40px 0; }
+.about-image-pattern-ap::before { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; bottom: -20px; height: 50px; right: -10px; width: 50px; }
+.about-image-pattern-ap::after { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; height: 100px; left: -10px; top: -20px; width: 200px; }
+.about-info-ap > p,
+.leading-business-listing > li:last-child { margin-bottom: 20px; }
+.leading-business-listing > li,
+.punch-lines-ap > li { font-size: 1.6rem; padding-left: 20px; text-align: justify; }
+.leading-business-listing > li::before,
+.punch-lines-ap > li::before { height: 10px; width: 10px; }
+
+	/*------- About Us Section Ends -------*/
+
+	/*------- Mission and Vision Section Starts -------*/
+
+.bg-mission-vision-ap { padding: 0 15px; }
+.mission-heading-ap > p,
+.vision-heading-ap > p { font-size: 12rem; margin: 0 0 20px; }
+.vision-heading-ap > p { margin: 20px 0; }
+.mission-vision-info-ap > p > span { font-size: 1.8rem; }
+
+	/*------- Mission and Vision Section Ends -------*/
+
+  /*------- Message from the Owner Section Starts -------*/
+
+.message-from-owner-info-ap > p { margin-bottom: 20px; }
+.message-from-owner-desc-ap > h4 { font-size: 2rem; margin-bottom: 10px; }
+.message-from-owner-desc-ap > h5 { font-size: 1.6rem; margin-bottom: 20px; text-align: justify; }
+
+	/*------- Message from the Owner Section Ends -------*/
+
+	/*------- Team Section Starts -------*/
+
+.bg-team-ap { padding: 0 15px; }
+.bg-team-ap > .row { margin-bottom: 35px; }
+.about-team-image-ap::before { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; bottom: -20px; height: 50px; right: -10px; width: 50px; }
+.about-team-image-ap::after { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; height: 100px; left: -10px; top: -20px; width: 200px; }
+.about-team-info-ap { margin: 10px 0 0 0; }
+.about-team-info-ap > p { margin-bottom: 20px; }
+
+	/*------- Team Section Ends -------*/
+
+/*------- About Us Page Ends -------*/
+
+/*------- Services Page Starts -------*/
+
+	/*------- Services Section Starts -------*/
+
+.bg-services-sp { padding-bottom: 0; }
+.services-areas-heading-sp { font-size: 2.2rem; line-height: 1.4; }
+.services-listing-sp > li,
+.services-details-listing-sp > li,
+.sub-services-details-listing-sp > li { font-size: 1.6rem; padding-left: 20px; text-align: justify; }
+.services-listing-sp > li::before,
+.services-details-listing-sp > li::before,
+.sub-services-details-listing-sp > li::before { height: 10px; width: 10px; }
+
+	/*------- Services Section Ends -------*/
+
+	/*------- Services Details Section Starts -------*/
+
+.bg-services-details-sp { padding-bottom: 0; }
+.services-details-heading-sp > h3 { font-size: 2.2rem; margin-bottom: 0; }
+.services-details-listing-sp { margin-top: 0; }
+.services-details-listing-sp > li:last-child { margin-bottom: 20px; }
+.services-details-listing-sp > li.others { margin-bottom: 0; }
+.services-details-listing-sp > li:last-child > ul { margin-bottom: 0; }
+
+	/*------- Services Details Section Ends -------*/
+
+/*------- Services Page Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
+
+	/*------- Form Section Starts -------*/
+
+.bg-form-cp { padding-bottom: 0; }
+.contact-image-cp { margin: 30px 0 50px; }
+.contact-form-cp { margin-left: 0; }
+
+	/*------- Form Section Ends -------*/
+
+  /*------- Map Section Starts -------*/
+
+.bg-map-cp { padding-bottom: 0; }
+
+	/*------- Map Section Ends -------*/
+
+/*------- Contact Us Page Ends -------*/
+  
+}
+  
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+/*------- Common CSS Starts -------*/
+
+.container-fluid { padding: 30px 20px; }
+.d-block-tab { display: block; }
+.section-heading > h2 { font-size: 3rem; margin-bottom: 20px; }
+.section-heading > h2 > span:first-child::after,
+.section-heading > h2 > span:nth-child(2) > span::after { bottom: 7px; }
+p { font-size: 1.6rem; text-align: justify; }
+.section-heading > h3 { font-size: 2.4rem; margin-bottom: 20px; }
+.read-more > a,
+.btn-submit { font-size: 1.6rem; padding: 12px 24px; }
+.btn-submit { margin-top: 5px; }
+.read-more-services-1 { margin: 5px 0 30px; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+  /*------- Desktop Header Menu and Desktop Logo and Navbar Menu Section Starts -------*/
+
+.bg-desktop-header-menu,
+.bg-logo-navbar-menu-desktop { padding: 10px 20px; }
+.menu-listing-desktop > li { margin-right: 19px; }
+.menu-listing-desktop > li > a { padding: 15px 0; }
+
+  /*------- Desktop Header Menu and Desktop Logo and Navbar Menu Section Ends -------*/
+
+  /*------- Slider Section Starts -------*/
+
+.bg-slider-home { padding: 0; }
+.slider-info-home { padding: 0 35px; }
+.slider-info-home > h1 { font-size: 5rem; }
+
+	/*------- Slider Section Ends -------*/
+
+  /*------- About Us Section Starts -------*/
+
+.row-manage-consul { margin-bottom: 70px; }
+.row-infra-deve { margin-bottom: 70px; }
+.about-info > p { margin-bottom: 20px; }
+.about-info > p:last-child { margin-bottom: 50px; }
+.about-desc-1 { padding-right: 30px; }
+.about-image-1::before { -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; bottom: -20px; height: 100px; left: -10px; width: 100px; }
+.about-image-1::after { -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; height: 100px; right: -10px; top: -20px; width: 200px; }
+.about-image-2::before { -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; bottom: -20px; height: 100px; right: -10px; width: 100px; }
+.about-image-2::after { -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; height: 100px; left: -10px; top: -20px; width: 200px; }
+.about-section-heading-2,
+.about-desc-2 { padding-left: 30px; }
+
+	/*------- About Us Section Ends -------*/
+
+  /*------- Services Section Starts -------*/
+
+.box-services { padding: 20px; }
+.box-services-image > svg { height: 50px; }
+.box-services-info > h4 { font-size: 2.2rem; }
+.box-services-info > h4 > span { display: inline-block; }
+
+	/*------- Services Section Ends -------*/
+
+  /*------- Contact Us Section Starts -------*/
+
+.bg-contact { padding: 50px 20px 30px; }
+.col-width-40-per { width: 50%; }
+.col-offset-4-per { margin-left: 25%; }
+.contact-image { margin: 0 0 50px; }
+.contact-image::before { -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; bottom: -20px; height: 100px; left: -20px; width: 100px; }
+.contact-image::after { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; height: 100px; right: -20px; top: -20px; width: 200px; }
+.form-control-contact { font-size: 1.6rem; height: 40px; }
+
+	/*------- Contact Us Section Ends -------*/
+
+  /*------- Testimonial Section Starts -------*/
+
+.testimonial-image > img { width: 100%; }
+.box-testimonial-desc-home > h3 { font-size: 2.2rem; }
+
+	/*------- Testimonial Section Ends -------*/
+
+  /*------- Footer Section Starts -------*/
+
+.box-footer { padding: 30px 20px 0; width: 90%; }
+.footer-logo { text-align: center; }
+.footer-contact-listing,
+.footer-logo > a > img { margin-bottom: 20px; }
+.footer-about-desc > p { margin-bottom: 20px; padding-right: 0; }
+.footer-heading > h3 { font-size: 2.4rem; margin-bottom: 20px; }
+.footer-heading > h3 > span::after { height: 4px; }
+.quick-listing { justify-content: center; margin: 30px 0 0; }
+.copyright-info { margin: 20px 0 0; }
+.copyright-info,
+.copyright-info > p { text-align: center; }
+
+  /*------- Footer Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+/*------- About Us Page Starts -------*/
+
+	/*------- Banner Section Starts -------*/
+
+  .section-heading-ip > h1 { font-size: 3rem; margin-bottom: 10px; }
+
+	/*------- Banner Section Starts -------*/
+
+	/*------- About Us Section Starts -------*/
+
+.about-image-pattern-ap { margin: 40px 0; }
+.about-image-pattern-ap::before { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; bottom: -20px; height: 50px; right: -10px; width: 50px; }
+.about-image-pattern-ap::after { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; height: 100px; left: -10px; top: -20px; width: 200px; }
+.about-info-ap > p,
+.leading-business-listing > li:last-child { margin-bottom: 20px; }
+.leading-business-listing > li,
+.punch-lines-ap > li { font-size: 1.6rem; padding-left: 20px; text-align: justify; }
+.leading-business-listing > li::before,
+.punch-lines-ap > li::before { height: 10px; width: 10px; }
+
+	/*------- About Us Section Ends -------*/
+
+	/*------- Mission and Vision Section Starts -------*/
+
+.bg-mission-vision-ap { padding: 0 15px; }
+.mission-heading-ap > p,
+.vision-heading-ap > p { font-size: 14rem; margin: 0 0 20px; }
+.vision-heading-ap > p { margin: 20px 0; }
+.mission-vision-info-ap > p > span { font-size: 1.8rem; }
+
+	/*------- Mission and Vision Section Ends -------*/
+
+  /*------- Message from the Owner Section Starts -------*/
+
+.message-from-owner-info-ap > p { margin-bottom: 20px; }
+.message-from-owner-desc-ap > h4 { font-size: 2rem; margin-bottom: 10px; }
+.message-from-owner-desc-ap > h5 { font-size: 1.6rem; margin-bottom: 20px; text-align: justify; }
+
+	/*------- Message from the Owner Section Ends -------*/
+
+	/*------- Team Section Starts -------*/
+
+.bg-team-ap { padding: 0 15px; }
+.bg-team-ap > .row { margin-bottom: 35px; }
+.about-team-image-ap::before { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; bottom: -20px; height: 50px; right: -10px; width: 50px; }
+.about-team-image-ap::after { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; height: 100px; left: -10px; top: -20px; width: 200px; }
+.about-team-info-ap { margin: 10px 0 0 0; }
+.about-team-info-ap > p { margin-bottom: 20px; }
+
+	/*------- Team Section Ends -------*/
+
+/*------- About Us Page Ends -------*/
+
+/*------- Services Page Starts -------*/
+
+	/*------- Services Section Starts -------*/
+
+.bg-services-sp { padding-bottom: 0; }
+.services-areas-heading-sp { font-size: 2.2rem; line-height: 1.4; }
+.services-listing-sp > li,
+.services-details-listing-sp > li,
+.sub-services-details-listing-sp > li { font-size: 1.6rem; padding-left: 20px; text-align: justify; }
+.services-listing-sp > li::before,
+.services-details-listing-sp > li::before,
+.sub-services-details-listing-sp > li::before { height: 10px; width: 10px; }
+
+	/*------- Services Section Ends -------*/
+
+	/*------- Services Details Section Starts -------*/
+
+.bg-services-details-sp { padding-bottom: 0; }
+.services-details-heading-sp > h3 { margin-bottom: 0; }
+.services-details-listing-sp { margin-top: 0; }
+.services-details-listing-sp > li:last-child { margin-bottom: 20px; }
+.services-details-listing-sp > li.others { margin-bottom: 0; }
+.services-details-listing-sp > li:last-child > ul { margin-bottom: 0; }
+
+	/*------- Services Details Section Ends -------*/
+
+/*------- Services Page Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
+
+	/*------- Form Section Starts -------*/
+
+.bg-form-cp { padding-bottom: 0; }
+.contact-image-cp { margin: 30px 0 50px; }
+.contact-form-cp { margin-left: 0; }
+
+	/*------- Form Section Ends -------*/
+
+  /*------- Map Section Starts -------*/
+
+.bg-map-cp { padding-bottom: 0; }
+
+	/*------- Map Section Ends -------*/
+
+/*------- Contact Us Page Ends -------*/
+  
+}

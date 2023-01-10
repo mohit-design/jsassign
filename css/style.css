@@ -1,0 +1,628 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Urbanist-Light"; src: url("../fonts/Urbanist-Light.ttf"); }
+@font-face { font-family: "Urbanist-Regular"; src: url("../fonts/Urbanist-Regular.ttf"); }
+@font-face { font-family: "Urbanist-Medium"; src: url("../fonts/Urbanist-Medium.ttf"); }
+@font-face { font-family: "Urbanist-Semibold"; src: url("../fonts/Urbanist-Semibold.ttf"); }
+@font-face { font-family: "Urbanist-Bold"; src: url("../fonts/Urbanist-Bold.ttf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { letter-spacing: 1px; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address { margin: 0; padding: 0; }
+li { list-style: none; }
+a,
+a:hover,
+a:focus,
+a::after,
+.btn::after { outline: 0; text-decoration: none; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+.container-fluid { padding: 100px 50px; }
+.d-flex { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; }
+.align-items-center { -webkit-align-items: center; align-items: center; }
+.justify-content-center { justify-content: center; }
+.justify-content-flex-end { justify-content: flex-end; }
+.section-heading > p { color: #3e4095; font: 1.6rem/1.2 "Urbanist-Regular"; margin-bottom: 10px; padding-left: 60px; position: relative; text-transform: uppercase; z-index: 1; }
+.section-heading > p::before { background-color: #3e4095; content: ""; display: block; height: 1px; left: 0; margin-top: -1px; position: absolute; top: 50%; width: 40px; z-index: 1; }
+.section-heading > h2 { color: #000000; font: 4rem/1.4 "Urbanist-Medium"; margin-bottom: 50px; }
+.section-heading > h2 > span:first-child { position: relative; z-index: 1; }
+.section-heading > h2 > span:first-child::after { background-color: rgb(62 63 147 / 77%); bottom: 10px; content: ""; display: block; height: 7px; left: 0; position: absolute; width: 100%; z-index: -1; }
+.section-heading > h2 > span:nth-child(2) { display: block; }
+.section-heading > h2 > span:nth-child(2) > span { position: relative; z-index: 1; }
+.section-heading > h2 > span:nth-child(2) > span::after { background-color: rgb(208 55 57 / 77%); bottom: 10px; content: ""; display: block; height: 7px; left: 0; position: absolute; width: 100%; z-index: -1; }
+.section-heading > h3 { color: #000000; font: 3rem/1.4 "Urbanist-Medium"; margin-bottom: 30px; }
+.section-heading > h3 > span { color: #3e4095; }
+.section-heading > h4 { color: #000000; font: 2.4rem/1.4 "Urbanist-Medium"; margin-bottom: 30px; }
+.section-heading > h4 > span { color: #3e4095; }
+.section-heading > h5 { color: #000000; font: 1.8rem/1.7 "Urbanist-Light"; margin-bottom: 30px; }
+.section-heading > h5 > span { color: #3e4095; }
+.section-heading-ip > h1 { color: #ffffff; font: 4rem/1.2 "Urbanist-Semibold"; margin-bottom: 15px; padding-bottom: 10px; position: relative; text-transform: uppercase; }
+.section-heading-ip > h1::after { background-color: #fff; bottom: 0; content: ""; display: block; height: 1px; left: 50%; position: absolute; transform: translateX(-50%); width: 100px; }
+.section-heading-ip > p > a,
+.section-heading-ip > p > span { color: #fff; font: 1.6rem/1.7 "Urbanist-Light"; text-align: center; }
+.section-heading-ip > p > span { padding: 0 15px; }
+.section-heading-ip > p > a.active,
+.section-heading-ip > p > a:hover { color: #ffe000; }
+p { color: #000000; font: 1.8rem/1.7 "Urbanist-Light"; }
+.read-more > a,
+.btn-submit { background-color: #d03739; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; color: #ffffff; display: inline-block; font: 1.8rem/1 "Urbanist-Regular"; letter-spacing: 1px; padding: 15px 30px; position: relative; text-align: center; text-transform: uppercase; z-index: 1; }
+.read-more > a::after,
+.btn-submit::after { border: 1px solid #000000; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; content: ""; display: block; height: 100%; left: 5px; position: absolute; top: -5px; width: 100%; z-index: 1; }
+.read-more > a:hover::after,
+.btn-submit:hover::after { left: -5px; top: 5px; }
+.btn:active:focus,
+.btn:focus { outline: 0; }
+.btn-submit:hover { color: #000000; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Home Page Starts -------*/
+
+	/*------- Mobile Logo and Burger Menu Section Starts -------*/
+
+.bg-logo-burger-menu-mobile,
+.fixed-navbar-menu-mobile { display: none; }
+
+	/*------- Mobile Logo and Burger Menu Section Ends -------*/
+
+	/*------- Desktop Header Menu Section Starts -------*/
+
+.bg-desktop-header-menu { background-color: #3e4095; border-bottom: 1px solid #ffffff; padding: 10px 50px; }
+.header-contact-info-listing > li { margin-right: 20px; }
+.header-contact-info-listing > li:last-child { margin-right: 0; }
+.header-contact-info-listing > li > span,
+.header-contact-info-listing > li > span > a { color: #ffffff; font: 1.6rem/1 "Urbanist-Medium"; }
+.header-contact-info-listing > li > span > a,
+.header-contact-info-listing > li > span > span { color: #ffffff; font-family: "Urbanist-Regular"; }
+.header-social-listing > li { margin-right: 15px; }
+.header-social-listing > li:last-child { margin-right: 0; }
+.header-contact-info-listing > li > span > i { color: #ff7a7c; padding-right: 5px; }
+.header-social-listing > li > a { background-color: transparent; border: 1px solid #ffffff; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; color: #ffffff; display: block; font-size: 1.4rem; height: 30px; line-height: 30px; text-align: center; width: 30px; }
+.header-social-listing > li > a:hover {background-color: #ffffff; color: #000000; }
+
+	/*------- Desktop Header Menu Section Ends -------*/
+
+	/*------- Desktop Logo and Navbar Menu Section Starts -------*/
+
+.bg-logo-navbar-menu-desktop { background-color: #ffffff; display: block; left: 0; padding: 0 50px; position: -webkit-sticky; position: sticky; top: 0; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; width: 100%; z-index: 11; }
+.header-logo-desktop > a { display: inline-block; }
+.header-logo-desktop > a > img { width: 170px; }
+.header-logo-desktop > a > p { color: #272727; font: 3rem/1.2 "Urbanist-Black"; letter-spacing: 0.5px; text-transform: uppercase; }
+.header-logo-desktop > a > p > span { color: #ffffff; }
+.menu-listing-desktop > li { display: inline-block; margin-right: 40px; position: relative; }
+.menu-listing-desktop > li:last-child { margin-right: 0; }
+.menu-listing-desktop > li > a { color: #272727; display: block; font: 1.6rem/1 "Urbanist-Regular"; padding: 35px 0; text-transform: uppercase; }
+.menu-listing-desktop > li.active > a,
+.menu-listing-desktop > li > a:hover { color: #d03739; }
+.sub-menu-listing-desktop { background-color: #ffffff; border: 1px solid #cccccc; left: 0; opacity: 0; position: absolute; top: 110%; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; visibility: hidden; width: 220px; z-index: 10; }
+.menu-listing-desktop > li:hover > a + .sub-menu-listing-desktop { opacity: 1; top: 100%; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; visibility: visible; }
+.sub-menu-listing-desktop > li { display: block; text-align: left; }
+.sub-menu-listing-desktop > li > a,
+.sub-sub-menu-listing-desktop > li > a { border-bottom: 1px solid rgb(0 0 0 / 20%); color: #000000; display: block; font: 1.6rem/1 "Urbanist-Regular"; padding: 10px 20px; }
+.sub-menu-listing-desktop > li:last-child > a { border-bottom: 0; }
+.sub-menu-listing-desktop > li > a:hover,
+.sub-sub-menu-listing-desktop > li > a:hover { background-color: #ffffff; color: #ffffff; }
+.sub-sub-menu-listing-desktop { background-color: #ffffff; border: 1px solid #cccccc;  opacity: 0; position: absolute; right: 218px; top: 110%; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; visibility: hidden; width: 370px; z-index: 10; }
+.sub-menu-listing-desktop > li:hover > a + .sub-sub-menu-listing-desktop { opacity: 1; top: -1px; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; transition: 0.5s linear; visibility: visible; }
+
+	/*------- Desktop Logo and Navbar Menu Section Ends -------*/
+
+	/*------- Slider Section Starts -------*/
+
+.bg-slider-home { padding: 0; position: relative; z-index: 2; }
+.bg-slider-home::before {
+	background-color: rgb(0 0 0 / 40%);
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.slider-info-home { left: 50%; padding: 0 50px; position: absolute; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); transform: translate(-50%,-50%); width: 100%; z-index: 3; }
+.slider-info-home > h1 { color: #ffffff; font: 6rem/1.2 "Urbanist-Bold"; margin-bottom: 15px; text-align: center; text-transform: uppercase; }
+.slider-info-home > h1 > span { position: relative; z-index: 1; }
+.slider-info-home > h1 > span:first-child::after,
+.slider-info-home > h1 > span:last-child > span::after { background-color: #3e4095; bottom: 10px; content: ""; display: block; height: 7px; left: 0; position: absolute; width: 100%; z-index: -1; }
+.slider-info-home > h1 > span:last-child { display: block; }
+.slider-info-home > h1 > span:last-child > span { position: relative; z-index: 1; }
+.slider-info-home > h1 > span:last-child > span::after { background-color: #d03739; }
+.banner-slick-slider .slick-prev,
+.banner-slick-slider .slick-next { background-color: #3e4095; height: 50px; width: 50px; z-index: 11; }
+.banner-slick-slider .slick-prev { -webkit-border-radius: 0 24px 24px 0; -moz-border-radius: 0 24px 24px 0; -ms-border-radius: 0 24px 24px 0; -o-border-radius: 0 24px 24px 0; border-radius: 0 24px 24px 0; left: 0; }
+.banner-slick-slider .slick-next { -webkit-border-radius: 24px 0 0 24px; -moz-border-radius: 24px 0 0 24px; -ms-border-radius: 24px 0 0 24px; -o-border-radius: 24px 0 0 24px; border-radius: 24px 0 0 24px; right: 0; }
+.banner-slick-slider .slick-prev::before,
+.banner-slick-slider .slick-next::before {
+	color: #ffffff;
+	content: "\f053";
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+}
+.banner-slick-slider .slick-next::before {
+	content: "\f054";
+}
+.banner-slick-slider.slick-initialized .slick-slide { margin-bottom: -5px; }
+.banner-slick-slider .slick-slide img { height: calc(100vh - 137px); object-fit: cover; width: 100%; }
+
+	/*------- Slider Section Ends -------*/
+
+	/*------- About Us Section Starts -------*/
+
+.row-manage-consul { margin-bottom: 200px; }
+.row-infra-deve { margin-bottom: 150px; }
+.about-section-heading-2 > h3 > span { color: #d03739; }
+.about-info > p { margin-bottom: 30px; text-align: justify; }
+.about-info > p:last-child { margin-bottom: 100px; }
+.about-image { position: relative; z-index: 1; }
+.about-image-1::before { background-color: #d03739; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; bottom: -50px; content: ""; display: block; height: 150px; left: -50px; position: absolute; width: 150px; z-index: 1; }
+.about-image-1::after { background-color: #3e4095; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; content: ""; display: block; height: 200px; position: absolute; right: -20px; top: -50px; width: 400px; z-index: -1; }
+.about-image-2::before { background-color: #d03739; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; bottom: -50px; content: ""; display: block; height: 150px; position: absolute; right: -50px; width: 150px; z-index: 1; }
+.about-image-2::after { background-color: #3e4095; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; content: ""; display: block; height: 200px; left: -20px; position: absolute; top: -50px; width: 400px; z-index: -1; }
+.about-image > img { border: 7px solid #ffffff; width: 100%; }
+.about-desc-1 { padding-right: 40px; }
+.about-section-heading-2,
+.about-desc-2 { padding-left: 40px; }
+
+	/*------- About Us Section Ends -------*/
+
+	/*------- Services Section Starts -------*/
+
+.bg-services { background: url("../images/service-banner.png") no-repeat top/cover; position: relative; z-index: 1; }
+.bg-services::before { background-color: #6bbcfe0d; content: ""; display: block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; z-index: -1; }
+.box-services { background-color: #ffffff; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; -webkit-box-shadow: 5px 10px 45px rgb(138 138 138 / 10%); -moz-box-shadow: 5px 10px 45px rgb(138 138 138 / 10%); -ms-box-shadow: 5px 10px 45px rgb(138 138 138 / 10%); -o-box-shadow: 5px 10px 45px rgb(138 138 138 / 10%); box-shadow: 5px 10px 45px rgb(138 138 138 / 10%); margin-bottom: 30px; padding: 30px; }
+.box-services-image > svg { display: block; height: 70px; margin-bottom: 20px; -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+.box-services-info > h4 { color: #000000; font: 2.7rem/1.2 "Urbanist-Medium"; margin-bottom: 15px; }
+.box-services-info > h4 > span { display: block; }
+.box-services svg path,
+.box-services-info > h4,
+.box-services-info > p { -webkit-transition: 0.5s ease; -moz-transition: 0.5s ease; -ms-transition: 0.5s ease; -o-transition: 0.5s ease; transition: 0.5s ease; }
+.box-services-info > a { display: inline-block; }
+.box-services-info > a > svg { height: 30px; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.box-services:hover { background-color: #3e4095; }
+.box-services:hover svg path { fill: #ffffff; }
+.box-services:hover > .box-asse-mana-image svg path { fill: #ffffff; stroke: #000000; }
+.box-services:hover h4,
+.box-services:hover p { color: #ffffff; }
+.read-more-services-1 { margin: 5px 0 30px; }
+.read-more-services-2 { margin: 5px 0 0; }
+
+	/*------- Services Section Ends -------*/
+
+	/*------- Contact Us Section Starts -------*/
+
+.contact-section-heading > h2 > span:last-child { display: inline; }
+.col-width-40-per { width: 40%; }
+.col-offset-4-per { margin-left: 4%; }
+.contact-image { position: relative; z-index: 1; }
+.contact-image::before { background-color: #d03739; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; bottom: -50px; content: ""; display: block; height: 150px; left: -50px; position: absolute; width: 150px; z-index: 1; }
+.contact-image::after { background-color: #3e4095; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; content: ""; display: block; height: 200px; position: absolute; right: -20px; top: -50px; width: 400px; z-index: -1; }
+.contact-image > img { border-radius: 14px; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; width: 100%; }
+.form-control-contact { background-color: transparent; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; box-shadow: none; font-family: "Urbanist-Light"; font-size: 1.8rem; height: 44px; letter-spacing: 1px; margin-bottom: 30px; }
+textarea.form-control-contact { height: 150px; resize: none; }
+.form-control-contact:focus { border-color: #3e4095; box-shadow: none; }
+.form-control-contact:focus::placeholder {
+  color: #3e4095;
+  opacity: 1;
+}
+.form-control-contact:focus:-ms-input-placeholder {
+  color: #3e4095;
+}
+.form-control-contact:focus::-ms-input-placeholder {
+  color: #3e4095;
+}
+
+	/*------- Contact Us Section Ends -------*/
+
+	/*------- Testimonial Section Starts -------*/
+
+.bg-testimonial { background-color: rgb(208 55 57 / 10%); }
+.testimonials-slider { margin-top: 50px; }
+.testimonial-image > img { margin: 0 auto; width: 75%; }
+.box-testimonial-desc-home > p { font-family: "Urbanist-Regular"; margin-bottom: 50px; text-align: justify; }
+.box-testimonial-desc-home > h3 { color: #d03739; font: 2.4rem/1.2 "Urbanist-Semibold"; padding-left: 60px; position: relative; z-index: 1; }
+.box-testimonial-desc-home > h3::before { background-color: #d03739; content: ""; height: 1px; left: 0; margin-top: -1px; position: absolute; top: 50%; width: 40px; z-index: 1; }
+.box-testimonial-desc-home > p:last-child { padding-left: 60px; }
+
+		/*------- Slick Slider Dots CSS Starts -------*/
+
+.testimonials-slider .slick-dots li { cursor: pointer; display: inline-block; height: auto; margin: 0 7px; padding: 0; position: relative; width: auto; }
+.testimonials-slider .slick-dots li button { background-color: #d03739; height: 12px; line-height: 12px; margin: 0; opacity: 0.5; -webkit-transition: all 0.5s linear; -moz-transition: all 0.5s linear; -ms-transition: all 0.5s linear; -o-transition: all 0.5s linear; transition: all 0.5s linear; width: 12px; transform: rotate(45deg); -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); }
+.testimonials-slider .slick-dots li.slick-active button { opacity: 1; }
+.testimonials-slider .slick-dots li button::before { content: ""; }
+
+		/*------- Slick Slider Dots CSS Ends -------*/
+
+	/*------- Testimonial Section Ends -------*/
+
+	/*------- Footer Section Starts -------*/
+
+.bg-footer { padding: 100px 50px 50px; position: relative; z-index: 1; }
+.bg-footer::after { background-color: #3e4095; bottom: 0; content: ""; display: block; height: 50%; left: 0; position: absolute; width: 100%; z-index: -1; }
+.box-footer { background-color: #ffffff; border: 4px solid #3e4095; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; padding: 50px; }
+.footer-logo > a { display: inline-block; }
+.footer-logo > a > img { margin-bottom: 30px; width: 200px; }
+.footer-about-desc > p { padding-right: 15px; }
+.footer-heading > h3 { color: #000000; font: 3rem/1.4 "Urbanist-Medium"; margin-bottom: 50px; }
+.footer-heading > h3 > span { position: relative; z-index: 1; }
+.footer-heading > h3 > span::after { background-color: rgb(62 63 147 / 77%); bottom: 5px; content: ""; display: block; height: 7px; left: 0; position: absolute; width: 100%; z-index: -1; }
+.footer-contact-listing > li { margin-bottom: 10px; }
+.footer-contact-listing > li:last-child { margin-bottom: 0; }
+.quick-listing,
+.copyright-info { margin: 50px 0 0; }
+.quick-listing > li { margin-right: 30px; }
+.quick-listing > li:last-child { margin-right: 0; }
+.footer-contact-listing > li > a,
+.quick-listing > li > a { color: #000000; display: inline-block; font: 1.8rem/1.5 "Urbanist-Light"; }
+.quick-listing > li > a { color: #ffffff; }
+.quick-listing > li > a:hover { color: #ffe000; }
+.footer-listing > li > a:hover { color: #d03739; }
+.footer-contact-listing > li { padding-left: 35px; position: relative; }
+.footer-contact-listing > li:first-child::before,
+.footer-contact-listing > li:nth-child(2)::before,
+.footer-contact-listing > li:nth-child(3)::before { color: #000000; content: "\f3c5"; display: block; font-family: "Font Awesome 5 Free"; font-size: 1.8rem; font-weight: 900; left: 0; position: absolute; top: 2px; }
+.footer-contact-listing > li:nth-child(2)::before { content: "\f879"; }
+.footer-contact-listing > li:nth-child(3)::before { content: "\f0e0"; }
+.footer-contact-listing > li > address > p { color: #000000; }
+.social-listing > li { margin-right: 15px; }
+.social-listing > li:last-child { margin-right: 0; }
+.social-listing > li > a { border: 1px solid #000000; -webkit-border-radius: 7px; -moz-border-radius: 7px; -ms-border-radius: 7px; -o-border-radius: 7px; border-radius: 7px; color: #000000; display: block; font-size: 1.6rem; height: 35px; line-height: 35px; text-align: center; width: 35px; }
+.social-listing > li > a:hover { -webkit-box-shadow: inset 0 -4px 0 0 #000000; -moz-box-shadow: inset 0 -4px 0 0 #000000; -ms-box-shadow: inset 0 -4px 0 0 #000000; -o-box-shadow: inset 0 -4px 0 0 #000000; box-shadow: inset 0 -4px 0 0 #000000; }
+.copyright-info > p,
+.copyright-info > p > a { color: #ffffff; font-size: 1.6rem; }
+.copyright-info > p > span,
+.copyright-info > p > a { color: #ffe000; }
+
+	/*------- Footer Section Ends -------*/
+
+/*------- Home Page Ends -------*/
+
+/*------- About Us Page Starts -------*/
+
+	/*------- Banner Section Starts -------*/
+
+.bg-banner-ip {
+	background: -webkit-linear-gradient(270deg, #d03739, #3e4095);
+	background: -moz-linear-gradient(270deg, #d03739, #3e4095);
+	background: -ms-linear-gradient(270deg, #d03739, #3e4095);
+	background: -o-linear-gradient(270deg, #d03739, #3e4095);
+	background: linear-gradient(270deg, #d03739, #3e4095);
+	padding: 50px 15px;
+}
+
+	/*------- Banner Section Starts -------*/
+
+	/*------- About Us Section Starts -------*/
+
+.bg-about-ap { padding-bottom: 0; }
+.about-image-pattern-ap { margin: 100px 0; position: relative; z-index: 1; }
+.about-image-pattern-ap::before { background-color: #d03739; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; bottom: -50px; content: ""; display: block; height: 150px; position: absolute; right: -20px; width: 150px; z-index: 1; }
+.about-image-pattern-ap::after { background-color: #3e4095; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; content: ""; display: block; height: 200px; left: -20px; position: absolute; top: -50px; width: 400px; z-index: -1; }
+.about-info-ap > p { margin-bottom: 30px; }
+.about-info-ap > p:last-child { margin-bottom: 0; }
+.about-info-ap > p > span { color: #3e4095; font-family: "Urbanist-Medium"; }
+.about-info-ap > p > span > span { color: #d03739; }
+.leading-business-listing > li { color: #000000; font: 1.8rem/1.4 "Urbanist-Light"; margin-bottom: 10px; padding-left: 25px; position: relative; z-index: 1; }
+.leading-business-listing > li::before { background-color: #3e4095; content: ""; display: block; height: 15px; width: 15px; left: 0; position: absolute; top: 3px; z-index: 1; }
+.leading-business-listing > li:last-child { margin-bottom: 30px; }
+
+	/*------- About Us Section Ends -------*/
+
+	/*------- Mission and Vision Section Starts -------*/
+
+.bg-mission-vision-ap { padding-bottom: 0; padding-top: 0; }
+.mission-heading-ap,
+.vision-heading-ap { background-color: #f7f7f7; }
+.mission-heading-ap > p {
+	-webkit-animation: masked-animation 10s infinite;
+	animation: masked-animation 10s infinite;
+	background: url("../images/our-mission.jpg") no-repeat 50% 50%/cover;
+	-webkit-background-clip: text;
+	background-clip: text;
+	font: 24rem/1.2 "Urbanist-Bold";
+	margin: 50px 0;
+	text-align: center;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	text-transform: uppercase;
+}
+.vision-heading-ap > p {
+	-webkit-animation: masked-animation 10s infinite;
+	animation: masked-animation 10s infinite;
+	background: url("../images/our-vision.jpg") no-repeat 50% 50%/cover;
+	-webkit-background-clip: text;
+	background-clip: text;
+	font: 24rem/1.2 "Urbanist-Bold";
+	margin: 50px 0;
+	text-align: center;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+	text-transform: uppercase;
+}
+@-webkit-keyframes masked-animation {
+	0%, 100% { background-position: 50% 55%; }
+	50% { background-position: 50% 65%; }
+}
+@-moz-keyframes masked-animation {
+	0%, 100% { background-position: 50% 55%; }
+	50% { background-position: 50% 65%; }
+}
+@-ms-keyframes masked-animation {
+	0%, 100% { background-position: 50% 55%; }
+	50% { background-position: 50% 65%; }
+}
+@-o-keyframes masked-animation {
+	0%, 100% { background-position: 50% 55%; }
+	50% { background-position: 50% 65%; }
+}
+@keyframes masked-animation {
+	0%, 100% { background-position: 50% 55%; }
+	50% { background-position: 50% 65%; }
+}
+.mission-vision-info-ap > p { margin-bottom: 20px; }
+.mission-vision-info-ap > p > span { color: #d03739; font: 2.4rem/1.2 "Urbanist-Semibold"; text-transform: uppercase; }
+.mission-vision-info-ap > p > span > span { color: #3e4095; }
+.mission-vision-info-ap > p:last-child { margin-bottom: 0; }
+.punch-lines-ap { margin-top: 30px; }
+.punch-lines-ap > li { color: #000000; font: 1.8rem/1.4 "Urbanist-Light"; margin-bottom: 20px; padding-left: 25px; position: relative; z-index: 1; }
+.punch-lines-ap > li::before { background-color: #3e4095; content: ""; display: block; height: 15px; width: 15px; left: 0; position: absolute; top: 3px; z-index: 1; }
+
+	/*------- Mission and Vision Section Ends -------*/
+
+	/*------- Team Section Starts -------*/
+
+.bg-team-ap { padding: 50px; }
+.bg-team-ap > .row { margin-bottom: 135px; }
+.bg-team-ap > .row:last-child { margin-bottom: 0; }
+.about-team-info-ap { margin-left: 50px; }
+.about-team-info-ap > p { margin-bottom: 30px; }
+.about-team-info-ap > p:last-child { margin-bottom: 0; }
+.about-team-image-ap { position: relative; z-index: 1; }
+.about-team-image-ap::before { background-color: #d03739; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; bottom: -50px; content: ""; display: block; height: 150px; position: absolute; right: -50px; width: 150px; z-index: 1; }
+.about-team-image-ap::after { background-color: #3e4095; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; content: ""; display: block; height: 200px; left: -20px; position: absolute; top: -50px; width: 400px; z-index: -1; }
+.about-team-image-ap > img { border: 7px solid #ffffff; width: 100%; }
+
+	/*------- Team Section Ends -------*/
+
+	/*------- Message from the Owner Section Starts -------*/
+
+.bg-message-from-owner-ap { padding: 50px 50px 0; }
+.message-from-owner-info-ap > p { margin-bottom: 30px; }
+
+	/*------- Message from the Owner Section Ends -------*/
+
+/*------- About Us Page Ends -------*/
+
+/*------- Services Page Starts -------*/
+
+	/*------- Services Section Starts -------*/
+
+.services-section-heading-sp > h2 { margin-bottom: 0; }
+.img-logo-icon-with-clipping-sp {
+	-webkit-animation: logoIconClippingSp 4s infinite;
+	animation: logoIconClippingSp 4s infinite;
+	margin: 0 auto;
+}
+@-webkit-keyframes logoIconClippingSp {
+	0% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+	50% { -webkit-transform: rotate(7deg); -moz-transform: rotate(7deg); -ms-transform: rotate(7deg); -o-transform: rotate(7deg); transform: rotate(7deg); }
+	100% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+}
+@-moz-keyframes logoIconClippingSp {
+	0% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+	50% { -webkit-transform: rotate(7deg); -moz-transform: rotate(7deg); -ms-transform: rotate(7deg); -o-transform: rotate(7deg); transform: rotate(7deg); }
+	100% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+}
+@-ms-keyframes logoIconClippingSp {
+	0% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+	50% { -webkit-transform: rotate(7deg); -moz-transform: rotate(7deg); -ms-transform: rotate(7deg); -o-transform: rotate(7deg); transform: rotate(7deg); }
+	100% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+}
+@-o-keyframes logoIconClippingSp {
+	0% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+	50% { -webkit-transform: rotate(7deg); -moz-transform: rotate(7deg); -ms-transform: rotate(7deg); -o-transform: rotate(7deg); transform: rotate(7deg); }
+	100% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+}
+@keyframes logoIconClippingSp {
+	0% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+	50% { -webkit-transform: rotate(7deg); -moz-transform: rotate(7deg); -ms-transform: rotate(7deg); -o-transform: rotate(7deg); transform: rotate(7deg); }
+	100% { -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -ms-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); }
+}
+.services-areas-heading-sp { font-family: "Urbanist-Medium"; font-size: 2.4rem; margin-bottom: 20px; }
+.services-listing-sp > li { color: #000000; font: 1.8rem/1.4 "Urbanist-Light"; margin-bottom: 10px; padding-left: 25px; position: relative; z-index: 1; }
+.services-listing-sp > li::before { background-color: #3e4095; content: ""; display: block; height: 15px; width: 15px; left: 0; position: absolute; top: 3px; z-index: 1; }
+.services-listing-sp > li:last-child { margin-bottom: 30px; }
+.services-details-listing-sp { margin-top: 40px; }
+.services-details-listing-sp > li { color: #000000; font: 1.8rem/1.4 "Urbanist-Light"; margin-bottom: 10px; padding-left: 25px; position: relative; z-index: 1; }
+.services-details-listing-sp > li::before { background-color: #3e4095; content: ""; display: block; height: 15px; width: 15px; left: 0; position: absolute; top: 3px; z-index: 1; }
+.services-details-listing-sp > li:last-child { margin-bottom: 30px; }
+.sub-services-details-listing-sp { border: 1px solid #3e4095; margin: 20px 0; padding: 15px; }
+.sub-services-details-listing-sp > li { color: #000000; font: 1.8rem/1.4 "Urbanist-Light"; margin-bottom: 10px; padding-left: 20px; position: relative; z-index: 1; }
+.sub-services-details-listing-sp > li::before { background-color: #3e4095; content: ""; display: block; height: 10px; width: 10px; left: 0; position: absolute; top: 5px; z-index: 1; }
+.sub-services-details-listing-sp > li:last-child { margin-bottom: 0; }
+
+	/*------- Services Section Ends -------*/
+
+	/*------- Services Images Section Starts -------*/
+
+.bg-services-images-sp { padding-top: 0; }
+.cd-image-container {
+	margin: 0 auto;
+  max-width: 768px;
+  position: relative;
+  width: 90%;
+}
+.cd-image-container img {
+  display: block;
+}
+.cd-image-label {
+  bottom: 0;
+  color: #ffffff;
+  font: 1.6rem/1.2 "Urbanist-Regular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  opacity: 0;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+	text-shadow: 1px 1px 1px #000000;
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  -o-transform: translateY(20px);
+  transform: translateY(20px);
+  -webkit-transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
+  -moz-transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
+	-ms-transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
+  -o-transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
+  transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
+}
+.cd-image-label.is-hidden {
+  visibility: hidden;
+}
+.is-visible .cd-image-label {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.cd-resize-img {
+	-webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+	background: url("../images/service-1.jpg") no-repeat left top;
+  background-size: auto 100%;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  width: 0;
+}
+.cd-resize-img .cd-image-label {
+	left: 0;
+  right: auto;
+}
+.is-visible .cd-resize-img {
+	-webkit-animation: cd-bounce-in 0.7s;
+  -moz-animation: cd-bounce-in 0.7s;
+  animation: cd-bounce-in 0.7s;
+  width: 50%;
+}
+@-webkit-keyframes cd-bounce-in {
+  0% { width: 0; }
+  60% { width: 55%; }
+  100% { width: 50%; }
+}
+@-moz-keyframes cd-bounce-in {
+  0% { width: 0; }
+  60% { width: 55%; }
+  100% { width: 50%; }
+}
+@-ms-keyframes cd-bounce-in {
+  0% { width: 0; }
+  60% { width: 55%; }
+  100% { width: 50%; }
+}
+@-o-keyframes cd-bounce-in {
+  0% { width: 0; }
+  60% { width: 55%; }
+  100% { width: 50%; }
+}
+@keyframes cd-bounce-in {
+  0% { width: 0; }
+  60% { width: 55%; }
+  100% { width: 50%; }
+}
+.cd-handle {
+	background: #d03739 url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-arrows.svg") no-repeat center center;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+	cursor: move;
+	height: 44px;
+	left: 50%;
+	margin-left: -22px;
+	margin-top: -22px;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate3d(0, 0, 0) scale(0);
+	-moz-transform: translate3d(0, 0, 0) scale(0);
+	-ms-transform: translate3d(0, 0, 0) scale(0);
+	-o-transform: translate3d(0, 0, 0) scale(0);
+	transform: translate3d(0, 0, 0) scale(0);
+	width: 44px;
+}
+.cd-handle.draggable {
+  background-color: #3e4095;
+}
+.is-visible .cd-handle {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  -moz-transform: translate3d(0, 0, 0) scale(1);
+  -ms-transform: translate3d(0, 0, 0) scale(1);
+  -o-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
+  -webkit-transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+  -moz-transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+	-ms-transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+  -o-transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+  transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+}
+
+	/*------- Services Images Section Ends -------*/
+
+	/*------- Services Details Section Starts -------*/
+
+.bg-services-details-sp { padding-bottom: 0; padding-top: 0; }
+.bg-services-details-heading-sp { padding: 25px 50px; position: relative; z-index: 1; }
+.bg-services-details-heading-sp::before { background-color: rgb(62 64 149 / 20%); border-radius: 0 40px 40px 0; content: ""; height: 100%; left: 0; position: absolute; top: 0; width: 50%; z-index: 1; -webkit-border-radius: 0 40px 40px 0; -moz-border-radius: 0 40px 40px 0; -ms-border-radius: 0 40px 40px 0; -o-border-radius: 0 40px 40px 0; }
+.services-details-heading-sp > h3 { margin-bottom: 0; }
+
+	/*------- Services Details Section Ends -------*/
+
+/*------- Services Page Ends -------*/
+
+/*------- Contact Us Page Starts -------*/
+
+	/*------- Form Section Starts -------*/
+
+.contact-section-heading-cp > h2 { margin-bottom: 0; }
+.contact-image-cp { margin: 100px 0 0; }
+.contact-form-cp { margin-left: 30px; }
+
+	/*------- Form Section Ends -------*/
+
+	/*------- Map Section Starts -------*/
+
+.bg-map-cp { padding-bottom: 0; padding-top: 25px; }
+.contact-map-cp { border: 0; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; height: 450px; width: 100%; }
+
+	/*------- Map Section Ends -------*/
+
+/*------- Contact Us Page Ends -------*/
